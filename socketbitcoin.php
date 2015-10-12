@@ -50,7 +50,7 @@ class bitcoin
 		$this->port = $port;
 	}
 
-	private function cmd($command, $testnet)
+	public function cmd($command, $testnet)
 	{
 		$args = func_get_args();
 		array_shift($args);
